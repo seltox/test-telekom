@@ -52,7 +52,7 @@ $config = [
             ],
         ],
         'notifications' => [
-            'class' => 'app\components\notifications',
+            'class' => 'app\components\Notifications',
             'providers' => [
                 'Email' => [
                     'class' => 'app\components\Email',

@@ -44,7 +44,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?php endif; ?>
 
                      <?= $form->field($model, 'users[]')->checkboxList(\yii\helpers\ArrayHelper::map($users, 'id', 'email'), [
-                                'template' => "<div class=\"col-lg-offset-1 col-lg-1\">{input} </div><div class='col-lg-7'>".$user->email."</div> ",
+                                'template' => "<div class=\"col-lg-offset-1 col-lg-1\">{input} </div><div class='col-lg-7'>{label}</div> ",
                             ]) ?>
 
                     <div class="form-group">

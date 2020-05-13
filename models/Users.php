@@ -37,6 +37,7 @@ class Users extends \yii\db\ActiveRecord
             [['email', 'password'], 'required', 'on' => 'register'],
             [['change_password', 'password_repeat'], 'safe', 'on' => 'profile'],
             [['email'], 'email'],
+            [['email'], 'unique'],
             [['password_repeat'], 'required', 'on' => 'register'],
             ['change_password', 'compare', 'compareAttribute' => 'password_repeat', 'on' => 'profile'],
             ['password', 'compare', 'compareAttribute' => 'password_repeat',  'on' => 'register'],
