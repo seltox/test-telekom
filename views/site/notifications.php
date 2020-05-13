@@ -34,8 +34,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
                     <?= $form->field($model, 'text')->textarea(['rows' => 6]) ?>
 
-                    <legend>Пользователи</legend>
-
                     <?php if($model->hasErrors('users')): ?>
                         <div class="alert alert-warning">
                             Укажите хотя бы одного пользователя
